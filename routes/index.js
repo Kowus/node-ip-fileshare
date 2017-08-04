@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
   fs.readdir(directory, function (err, files) {
     if (err) return console.error(err);
     res.render('index', {
-      title: 'Hivebot Classes',
+      title: 'My File Server',
       files: files
     });
   });
